@@ -11,7 +11,7 @@ import SwiftUI
 struct MunchkinsCalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListPlayers()
         }
     }
 }
