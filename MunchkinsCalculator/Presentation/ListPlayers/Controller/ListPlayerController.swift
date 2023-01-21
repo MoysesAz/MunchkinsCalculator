@@ -11,7 +11,6 @@ final class ListPlayerController {
     private var listPLayers: [PlayerModel] = []
     private var challenger: PlayerModel?
     private var support: PlayerModel?
-
     private var battle: Bool = false
 
     var countPlayers: Int {
