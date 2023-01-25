@@ -8,17 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		951B0A9C297C3735004F1A4B /* MunchkinsCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B0A9B297C3735004F1A4B /* MunchkinsCalculatorApp.swift */; };
-		951B0A9E297C3735004F1A4B /* ListPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B0A9D297C3735004F1A4B /* ListPlayers.swift */; };
+		951B0A9E297C3735004F1A4B /* ListPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B0A9D297C3735004F1A4B /* ListPlayersView.swift */; };
 		951B0AA0297C3736004F1A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951B0A9F297C3736004F1A4B /* Assets.xcassets */; };
 		951B0AA3297C3736004F1A4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 951B0AA2297C3736004F1A4B /* Preview Assets.xcassets */; };
+		951B0AB6297C415A004F1A4B /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B0AB5297C415A004F1A4B /* PlayerModel.swift */; };
+		951B0AB8297C4347004F1A4B /* ListPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B0AB7297C4347004F1A4B /* ListPlayerController.swift */; };
+		951B0ABF297C6B17004F1A4B /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951B0ABE297C6B17004F1A4B /* PlayerCell.swift */; };
+		952EE697298005CF00A5C6BC /* PoinstBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952EE696298005CF00A5C6BC /* PoinstBar.swift */; };
+		952EE69929808CE100A5C6BC /* CadastroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952EE69829808CE100A5C6BC /* CadastroView.swift */; };
+		954EE06B297ECC5B00541529 /* PickerSupports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EE06A297ECC5B00541529 /* PickerSupports.swift */; };
+		9553B09D297CF85C001DEC43 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553B09C297CF85C001DEC43 /* StatusBar.swift */; };
+		9553B0A3297D92DB001DEC43 /* ListPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553B0A2297D92DB001DEC43 /* ListPlayers.swift */; };
+		9553B0A6297DA479001DEC43 /* PickerFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553B0A5297DA479001DEC43 /* PickerFighter.swift */; };
+		9553B0A9297DC2D1001DEC43 /* FightersEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9553B0A8297DC2D1001DEC43 /* FightersEnum.swift */; };
+		95B35021297CAD2D00C40F45 /* PickerChallenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B35020297CAD2D00C40F45 /* PickerChallenger.swift */; };
+		95B35023297CB6A400C40F45 /* PickerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B35022297CB6A400C40F45 /* PickerStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		951B0A98297C3735004F1A4B /* MunchkinsCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MunchkinsCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		951B0A9B297C3735004F1A4B /* MunchkinsCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunchkinsCalculatorApp.swift; sourceTree = "<group>"; };
-		951B0A9D297C3735004F1A4B /* ListPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlayers.swift; sourceTree = "<group>"; };
+		951B0A9D297C3735004F1A4B /* ListPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlayersView.swift; sourceTree = "<group>"; };
 		951B0A9F297C3736004F1A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		951B0AA2297C3736004F1A4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		951B0AB5297C415A004F1A4B /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		951B0AB7297C4347004F1A4B /* ListPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlayerController.swift; sourceTree = "<group>"; };
+		951B0ABE297C6B17004F1A4B /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		952EE696298005CF00A5C6BC /* PoinstBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoinstBar.swift; sourceTree = "<group>"; };
+		952EE69829808CE100A5C6BC /* CadastroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroView.swift; sourceTree = "<group>"; };
+		954EE06A297ECC5B00541529 /* PickerSupports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSupports.swift; sourceTree = "<group>"; };
+		9553B09C297CF85C001DEC43 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		9553B0A2297D92DB001DEC43 /* ListPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlayers.swift; sourceTree = "<group>"; };
+		9553B0A5297DA479001DEC43 /* PickerFighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerFighter.swift; sourceTree = "<group>"; };
+		9553B0A8297DC2D1001DEC43 /* FightersEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightersEnum.swift; sourceTree = "<group>"; };
+		95B35020297CAD2D00C40F45 /* PickerChallenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerChallenger.swift; sourceTree = "<group>"; };
+		95B35022297CB6A400C40F45 /* PickerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerStatus.swift; sourceTree = "<group>"; };
+		95D1ADA929818DAE00DC4EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +76,7 @@
 		951B0A9A297C3735004F1A4B /* MunchkinsCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				95D1ADA929818DAE00DC4EA8 /* Info.plist */,
 				951B0AB0297C3EAA004F1A4B /* Domain */,
 				951B0AAB297C3D39004F1A4B /* Presentation */,
 				951B0AAA297C3C5C004F1A4B /* Aplication */,
@@ -106,7 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				951B0AAF297C3E0A004F1A4B /* Components */,
-				951B0A9D297C3735004F1A4B /* ListPlayers.swift */,
+				951B0A9D297C3735004F1A4B /* ListPlayersView.swift */,
+				952EE69829808CE100A5C6BC /* CadastroView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +141,7 @@
 		951B0AAE297C3DBF004F1A4B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				951B0AB7297C4347004F1A4B /* ListPlayerController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,6 +149,11 @@
 		951B0AAF297C3E0A004F1A4B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9553B0A4297D9411001DEC43 /* Pickers */,
+				9553B09C297CF85C001DEC43 /* StatusBar.swift */,
+				952EE696298005CF00A5C6BC /* PoinstBar.swift */,
+				951B0ABE297C6B17004F1A4B /* PlayerCell.swift */,
+				9553B0A2297D92DB001DEC43 /* ListPlayers.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -136,6 +169,7 @@
 		951B0AB1297C3EB0004F1A4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				951B0AB5297C415A004F1A4B /* PlayerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,8 +177,36 @@
 		951B0AB4297C3F03004F1A4B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9553B0A7297DC2B1001DEC43 /* Enum */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		954EE06E297ECE8100541529 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				95B35022297CB6A400C40F45 /* PickerStatus.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		9553B0A4297D9411001DEC43 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				954EE06E297ECE8100541529 /* Status */,
+				95B35020297CAD2D00C40F45 /* PickerChallenger.swift */,
+				954EE06A297ECC5B00541529 /* PickerSupports.swift */,
+				9553B0A5297DA479001DEC43 /* PickerFighter.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		9553B0A7297DC2B1001DEC43 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				9553B0A8297DC2D1001DEC43 /* FightersEnum.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,8 +279,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				951B0A9E297C3735004F1A4B /* ListPlayers.swift in Sources */,
+				95B35021297CAD2D00C40F45 /* PickerChallenger.swift in Sources */,
+				9553B0A6297DA479001DEC43 /* PickerFighter.swift in Sources */,
+				9553B0A9297DC2D1001DEC43 /* FightersEnum.swift in Sources */,
+				95B35023297CB6A400C40F45 /* PickerStatus.swift in Sources */,
+				9553B0A3297D92DB001DEC43 /* ListPlayers.swift in Sources */,
+				951B0AB6297C415A004F1A4B /* PlayerModel.swift in Sources */,
+				951B0A9E297C3735004F1A4B /* ListPlayersView.swift in Sources */,
+				952EE69929808CE100A5C6BC /* CadastroView.swift in Sources */,
+				9553B09D297CF85C001DEC43 /* StatusBar.swift in Sources */,
+				951B0AB8297C4347004F1A4B /* ListPlayerController.swift in Sources */,
 				951B0A9C297C3735004F1A4B /* MunchkinsCalculatorApp.swift in Sources */,
+				952EE697298005CF00A5C6BC /* PoinstBar.swift in Sources */,
+				954EE06B297ECC5B00541529 /* PickerSupports.swift in Sources */,
+				951B0ABF297C6B17004F1A4B /* PlayerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +424,7 @@
 				DEVELOPMENT_TEAM = 35GM6XG62S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MunchkinsCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -379,7 +453,7 @@
 				DEVELOPMENT_TEAM = 35GM6XG62S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MunchkinsCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
