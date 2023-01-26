@@ -10,7 +10,6 @@ import SwiftUI
 struct PoinstBar: View {
     @Binding var powerChallengers: Int
     @Binding var powerMonster: Int
-    @Binding var selectedFighterType: FightersEnum
     @Binding var isBattle: Bool
 
     var body: some View {
@@ -27,9 +26,6 @@ struct PoinstBar: View {
                         .foregroundColor(.red)
 
                 }
-            Divider()
-            PickerFighter(selectedFighter: $selectedFighterType)
-
         }
     }
 }

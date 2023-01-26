@@ -10,19 +10,17 @@ import SwiftUI
 struct ListPlayersView: View {
     @ObservedObject var controller: ListPlayerController = ListPlayerController()
 
-
     var body: some View {
         VStack{
             List {
                 Section("Players") {
                     ForEach($controller.listPLayers, id: \.id) { player in
-                            PlayerCell(player: player, color: .red)
+                        PlayerCell(player: player, color: .red)
                     }.onDelete{ index in
                         if controller.isBattle {
                             controller.finishedBattle()
                             controller.isBattle.toggle()
                         }
-                        controller.selectedChallenger = 0
                         controller.listPLayers.remove(atOffsets: index)
                     }
                     Button(action: {
@@ -33,15 +31,23 @@ struct ListPlayersView: View {
                         controller.listPLayers.append(PlayerModel(name: "New Player"))
                     }) {
                         HStack {
+                            Text("Add")
                             Image(systemName: "plus")
                         }
                     }
                 }
-
+                if controller.isBattle {
+                    Section("Powers") {
+                        PoinstBar(powerChallengers: $controller.powerChallengers, powerMonster: $controller.powerMonster, isBattle: $controller.isBattle)
+                    }
+                }
                 if !controller.listPLayers.isEmpty {
-                    Section(controller.isBattle ? "Fight" : "Challenger") {
+                    Section(controller.selectedFighterType.rawValue) {
                         VStack{
-                            PoinstBar(powerChallengers: $controller.powerChallengers, powerMonster: $controller.powerMonster, selectedFighterType: $controller.selectedFighterType, isBattle: $controller.isBattle)
+                            if controller.isBattle {
+                                PickerFighter(selectedFighter: $controller.selectedFighterType)
+                                Divider()
+                            }
                             switch controller.selectedFighterType {
                             case .challenger:
                                 PickerChallenger(selectedChallenger: $controller.selectedChallenger, players: $controller.listPLayers)
@@ -57,10 +63,22 @@ struct ListPlayersView: View {
                                 Text("Monster")
                                 StatusBar(fighterType: $controller.selectedFighterType, player: $controller.monster, color: .red)
                             }
+
                         }
                     }
+
                 }
+
+                Toggle(!controller.isBattle ? "Start Battle" : "Finish Battle", isOn: $controller.isBattle)
+                    .toggleStyle(SwitchToggleStyle(tint: .accentColor))
+                    .onTapGesture(){
+                        controller.battle()
+                    }
+                    .disabled(controller.listPLayers.isEmpty)
+
             }
+            .listStyle(.sidebar)
+
             .onChange(of: controller.listPLayers) { _ in
                 if !controller.listPLayers.isEmpty {
                     controller.sumChallengers()
@@ -77,22 +95,11 @@ struct ListPlayersView: View {
                 }
             }
 
-//Custom Modifieis
-
-            Button("Fight") {
-                controller.isBattle.toggle()
-                if controller.isBattle {
-                    controller.startBattle()
-                } else {
-                    controller.finishedBattle()
-                }
-                controller.selectedFighterType = .challenger
-
-            }
-            .disabled(controller.listPLayers.isEmpty)
-            .padding()
         }
+
+        //Custom Modifieis
     }
+
 }
 
 

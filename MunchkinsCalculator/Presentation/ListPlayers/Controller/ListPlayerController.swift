@@ -10,11 +10,9 @@ import Foundation
 final class ListPlayerController: ObservableObject {
     let fighters:  [FightersEnum] = FightersEnum.allCases
 
-    @Published var listPLayers: [PlayerModel] = [
-    ]
+    @Published var listPLayers: [PlayerModel] = []
 
     @Published var monster: PlayerModel = PlayerModel(name: "Monster", level: 0)
-
     @Published var powerChallengers: Int = 0
     @Published var powerMonster: Int = 0
 
@@ -23,18 +21,20 @@ final class ListPlayerController: ObservableObject {
     @Published var selectedFighterType: FightersEnum = .challenger
     @Published var isBattle: Bool = false
 
-    var countPlayers: Int {
-        get { return listPLayers.count }
-    }
 
     func addSupportNull() {
-        listPLayers += [PlayerModel(name: "Null", level: 0)]
+        listPLayers.append(PlayerModel(name: "Null", level: 0))
+    }
+
+    func focusInSupportNull() {
         selectedSupport = listPLayers.count - 1
     }
 
     func removeSupportNull() {
-        listPLayers.remove(at: listPLayers.count - 1)
-        selectedSupport = 0
+        // verificar se o ultimo e nulo
+        if listPLayers[listPLayers.count - 1].name == "Null" {
+            listPLayers.remove(at: listPLayers.count - 1)
+        }
     }
 
     func sumChallengers() {
@@ -67,18 +67,41 @@ final class ListPlayerController: ObservableObject {
         return listPLayers.count - 1 == selectedSupport ? true : false
     }
 
-
     func startBattle() {
-        addSupportNull()
-        sumChallengers()
+            selectedFighterType = .challenger
+            addSupportNull()
+            focusInSupportNull()
+            sumChallengers()
     }
 
     func finishedBattle() {
-        removeSupportNull()
-        removeAllPlayersSorceries()
-        resetMonster()
+            resetSelectors()
+            resetPowers()
+            removeSupportNull()
+            removeAllPlayersSorceries()
+            resetMonster()
+            selectedFighterType = .challenger
     }
 
+    func battle() {
+        if isBattle {
+            finishedBattle()
+        } else {
+            startBattle()
+        }
+
+        isBattle.toggle()
+    }
+
+    func resetSelectors() {
+        selectedChallenger = 0
+        selectedSupport = 0
+    }
+
+    func resetPowers() {
+        powerChallengers = 0
+        powerMonster = 0
+    }
 
 
 }
